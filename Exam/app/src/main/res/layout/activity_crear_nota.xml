@@ -1,0 +1,77 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-Nota"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearNotaActivity">
+
+    <EditText
+        android:id="@+id/editTextEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Estudiante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextProfesor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Profesor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEstudiante"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAnio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Periodo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextProfesor"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextValorDeLaNota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Valor de la nota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextAnio"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextValorDeLaNota"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerMaterias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxDisponible"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCrearNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Nota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerMaterias"
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

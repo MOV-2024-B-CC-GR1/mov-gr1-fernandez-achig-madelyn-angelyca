@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-Nota"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearMateriaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+
+        <EditText
+            android:id="@+id/editTextDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Facultad" />
+
+        <EditText
+            android:id="@+id/editTextFechaFundacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de registro" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAbierta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abierta" />
+
+        <Button
+            android:id="@+id/btnCrearMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Materia" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

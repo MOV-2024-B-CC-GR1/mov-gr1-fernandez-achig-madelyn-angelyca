@@ -1,0 +1,73 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-Nota"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificarNotaActivity">
+
+    <EditText
+        android:id="@+id/editTextEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Estudiante"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/editTextProfesor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Profesor"
+        app:layout_constraintTop_toBottomOf="@id/editTextEstudiante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAnio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Periodo"
+        app:layout_constraintTop_toBottomOf="@id/editTextProfesor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <EditText
+        android:id="@+id/editTextValorDeLaNota"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="ValorDeLaNota"
+        app:layout_constraintTop_toBottomOf="@id/editTextAnio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponible"
+        app:layout_constraintTop_toBottomOf="@id/editTextValorDeLaNota"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxDisponible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

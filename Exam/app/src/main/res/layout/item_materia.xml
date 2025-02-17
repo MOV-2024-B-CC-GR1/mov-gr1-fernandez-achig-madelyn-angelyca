@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-Nota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la materia"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDireccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Facultad"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNombre" />
+
+    <TextView
+        android:id="@+id/textViewFechaFundacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Registro"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDireccion" />
+
+    <TextView
+        android:id="@+id/textViewAbierta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Abierta"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewFechaFundacion" />
+
+    <TextView
+        android:id="@+id/textViewNumeroNotas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Número de Estudiantes"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAbierta" />
+
+    <TextView
+        android:id="@+id/textViewLatitud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Latitud"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNumeroNotas" />
+
+    <TextView
+        android:id="@+id/textViewLongitud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Longitud"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLatitud" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
